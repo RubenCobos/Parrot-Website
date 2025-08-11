@@ -1,0 +1,55 @@
+*
+{
+	box-sizing: border-box;
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+form
+{
+	width: 95%;
+	height: auto;
+	margin: auto;
+}
+
+fieldset
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+form h1, h2
+{
+	text-align: center;
+}
+
+.CustomerInfoItem input
+{
+	width: 250px;
+}
+
+#species
+{
+	width: 250px;
+}
+
+#deliverydate
+{
+	display: block;
+	width: 10%;
+	margin: auto;
+}
+
+#submit
+{
+	display: block;
+	width: 10%;
+	margin: auto;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sample Form</title>
+ <meta charset="utf-8">
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <style>*{box-sizing:border-box}</style>
+</head>
+<body>
+ <header>
+  <h1 style="text-align:left">Sample Form</h1>
+ </header>
+ <nav>
+ </nav>
+ <main>
+  <form name="myform" method="get">
+   <h2 style="text-align:left">Textbox with Submit and Reset Buttons</h2>
+   <label>
+    Enter Information: 
+    <input type="text" name="textbox">
+   </label>
+   <fieldset>
+   <legend>Favorite Parrot:</legend>
+    <h2 style="text-align:left">Checkboxes</h2>
+    <label><input type="checkbox" checked="checked" value="yes" name="Clovebird">Lovebird<br></label>
+    <label><input type="checkbox" checked="checked" value="yes" name="Camazon">Amazon<br></label>
+    <label><input type="checkbox" checked="checked" value="yes" name="Cconure">Sun Conure<br></label>
+    <h2 style="text-align:left">Radio Buttons</h2>
+    <label><input type="radio" checked="checked" value="lovebird" name="favparrot">Lovebird<br></label>
+    <label><input type="radio" value="amazon" name="favparrot">Amazon<br></label>
+    <label><input type="radio" value="conure" name="favparrot">Sun Conure<br></label>
+   </fieldset>
+   <h2 style="text-align:left">Password Box</h2>
+   Enter Password: <input type="password" name="passbox">
+   <h2 style="text-align:left">Scrolling Text Box</h2>
+   <label>
+    Comments:<br><br>
+    <textarea cols="60" rows="5" maxlength="500" name="commentbox">Type here...</textarea>
+   </label>
+   <h2 style="text-align:left">Select List</h2>
+   Choose your favorite parrot again:
+   <select size="1" name="selectlist">
+    <option selected="selected" value="Slovebird">Lovebird</option>
+    <option value="Samazon">Amazon</option>
+    <option value="Sconure">Conure</option>
+   </select>
+   <h2 style="text-align:left">Submit and Reset Buttons</h2>
+   <input type="submit" value="Send" name="sendform">
+   <input type="reset" value="Erase" name="resetfields">
+  </form>
+ </main>
+ <footer>
+ </footer>
+</body>
+</html>

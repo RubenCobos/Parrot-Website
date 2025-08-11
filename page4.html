@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order Form</title>
+ <meta charset="utf-8">
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <link rel="stylesheet" type="text/css" href="form.css"
+</head>
+<body>
+ <header>
+ </header>
+ <nav>
+ </nav>
+ <main>
+  <form name="order" id="order" method="get" action="http://192.168.1.244:8000">
+   <h1>Parrot Order Form</h1>
+   <fieldset id="customerfield">
+   <legend>Customer Information</legend>
+    <div class="CustomerInfoItem">
+     <label for="name">Name:</label>
+     <input type="text" name="name" id="name" maxlength="100" required="required">
+    </div>
+    <div class="CustomerInfoItem">
+     <label for="email">E-mail:</label>
+     <input type="email" name="email" id="email" maxlength="100">
+    </div>
+    <div class="CustomerInfoItem">
+     <label for="phone">Phone number:</label>
+     <input type="tel" name="phone" id="phone" maxlength="100" required="required">
+    </div>
+   </fieldset>
+   <fieldset id="parrotfield">
+   <legend>Parrot Information</legend>
+    <div class="ParrotInfoItem">
+     <label for="species">Choose any species:</label>
+     <input type="textbox" name="species" id="species" maxlength="100" required="required" list="parrotlist">
+      <datalist id="parrotlist">
+       <option label="Lovebird" value="lovebird">
+       <option label="Amazon" value="amazon">
+       <option label="Conure" value="conure">
+       <option label="Budgie" value="budgie">
+      </datalist>
+    </div>
+    <div class="ParrotInfoItem">
+     <label for="color">Choose any color:</label>
+     <input type="color" name="color" id="color" required="required">
+    </div>
+    <div class="ParrotInfoItem">
+     <label for="male">Male:</label>
+     <input type="radio" name="sex" id="male" value="male" required="required">
+     <label for="female">Female:</label>
+     <input type="radio" name="sex" id="female" value="female "required="required">
+    </div>
+   </fieldset>
+   <fieldset id="accessoryfield">
+   <legend>Accessories</legend>
+    <div class="Accessory">
+     <label for="eggs">How many eggs? &nbsp;</label>
+     0<input type="range" name="eggs" id="eggs" min="0" max="250" step="1">250
+    </div>
+    <div class="Accessory">
+     <label for="feathers">Feathers (0-5000)? &nbsp;</label>
+     <input type="number" name="feathers" id="feathers" min="0" max="5000" step="10">
+    </div>
+   </fieldset>
+   <h2>Choose a Delivery Date</h2>
+   <input type="date" id="deliverydate">
+   <br>
+   <input type="submit" id="submit">
+  <form>
+ </main>
+ <footer>
+ </footer>
+</body>
+</html>
