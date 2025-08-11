@@ -23,3 +23,8 @@ Psuedo classes.
 Multimedia.
 
 Tables and forms.
+
+Note
+----
+
+This website includes sample forms for demonstration purposes only. No data is collected or transmitted.
